@@ -1,0 +1,44 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+body {
+  width: 980px;
+  margin: 10px auto;
+}
+div {
+  box-shadow: -8px -9px 0px #a3eb13, 8px 9px 0px #c6e047;
+  position: relative;
+  counter-increment: count;
+  background-color: white;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  margin: 50px;
+  margin-left: 50px;
+  border: 5px solid black;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+div::before {
+  content: "nour & body";
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  font-size: 20px;
+  font-weight: 300;
+  font-weight: bolder;
+}
+div::after {
+  content: counter(count);
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 4px 13px;
+  position: relative;
+  left: 30px;
+  bottom: 42px;
+  border-top-right-radius: 50px;
+}
